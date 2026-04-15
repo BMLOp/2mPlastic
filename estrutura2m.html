@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2MPlastic</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+
+/* CONTEÚDO */
+.conteudo-box {
+  background: rgba(245, 245, 245, 0.95);
+  backdrop-filter: blur(14px);
+  margin: 110px auto 90px;
+  border-radius: 28px;
+  width: 92%;
+  max-width: 1200px;
+  min-height: calc(100vh - 160px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+/* NAVBAR MODERNA */
+.navbar {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+
+  padding: 8px 18px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+  z-index: 1000;
+}
+
+/* LOGO ALINHADA PERFEITAMENTE */
+.logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+.navbar a {
+  text-decoration: none;
+  color: #1a0f0f;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+  color: #d10000;
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+section {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  text-align: center;
+  animation: fade 0.5s ease;
+}
+
+section.ativo {
+  display: flex;
+}
+
+h1, h2 {
+  color: #b30000;
+}
+
+section p {
+  max-width: 850px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* BOTÃO */
+.btn {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #c40000;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff0000;
+  transform: translateY(-2px);
+}
+
+/* IMAGENS */
+img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* CONTATO */
+.contato-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FOOTER MODERNO */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #a80000;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* INSTAGRAM ICON */
+.footer svg {
+  width: 22px;
+  height: 22px;
+  fill: white;
+  transition: 0.3s;
+}
+
+.footer svg:hover {
+  transform: scale(1.2);
+}
+
+/* ANIMAÇÃO */
+@keyframes fade {
+  from {opacity: 0; transform: translateY(18px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    width: 92%;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <!-- LOGO -->
+  <img src="logo.png" class="logo">
+
+  <a href="#" data-sec="home">Início</a>
+  <a href="#" data-sec="empresa">Empresa</a>
+  <a href="#" data-sec="missao">Missão</a>
+  <a href="#" data-sec="catalogo">Catálogo</a>
+  <a href="#" data-sec="contato">Contato</a>
+</div>
+
+<div class="conteudo-box">
+
+  <section id="home" class="ativo">
+    <h1>Bem-vindo à 2MPlastic</h1>
+    <p>
+      A 2MPlastic é uma empresa especializada em soluções automotivas plásticas,
+      com foco em qualidade, inovação e confiança.<br>
+      Com anos de experiência no mercado, buscamos inovação constante e excelência em cada detalhe,
+      garantindo confiança e satisfação em todos os nossos produtos.<br>
+      Trabalhamos com tecnologia moderna e uma equipe especializada para atender às necessidades
+      do mercado com responsabilidade e eficiência.
+    </p>
+
+    <img src="2MPlasticbusca.jpg">
+  </section>
+
+  <section id="empresa">
+    <h2>Sobre a Empresa</h2>
+    <p>
+      A 2M Plastic iniciou suas atividades no ano de 2012, com o objetivo de oferecer soluções eficazes e inovadoras no mercado de reposição automotiva.<br>
+      Desde então, a empresa vem se destacando pela qualidade, variedade, exclusividade e preços competitivos de seus produtos.<br>
+      Atuando com empenho e profissionalismo, a 2M Plastic desenvolveu uma linha diversificada de produtos, incluindo capas de proteção de correia dentada, quebra-sol e grades de para-choque.<br>
+      A competência e a seriedade da empresa resultaram em uma parceria exclusiva para a distribuição de tampas de reservatório e de toda a linha elétrica MTA.<br>
+      Seguimos constantemente em busca de inovação, oferecendo qualidade e confiança aos nossos clientes.
+    </p>
+  </section>
+
+  <section id="missao">
+    <h2>Missão</h2>
+    <p>
+      Desenvolver e fornecer soluções em peças plásticas automotivas com excelência, inovação e qualidade, buscando constantemente melhorias em processos e produtos. Nosso compromisso é atender o mercado com preços competitivos, garantindo a satisfação de clientes, parceiros e colaboradores, por meio de relações comerciais sólidas baseadas na confiança, transparência e respeito.
+    </p>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <p>
+      O Catálogo da 2M Plastic está disponível em formato de aplicativo, proporcionando uma experiência prática e interativa.
+    </p>
+
+    <a class="btn" href="HYJUInstalarCatalogo2mAutopecas.exe" download>
+      Baixar Catálogo
+    </a>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+
+    <div class="contato-box">
+      <p>Email: contato@2mplastic.com.br</p>
+      <p>Telefone: +55 (019) 3849-1967</p>
+      <p>Endereço: Av. Arquiteto Clayton Alves Corrêa, 595 - Valinhos/SP</p>
+
+      <img src="localização.jpg">
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span>© 2026 2MPlastic</span>
+
+  <!-- Instagram correto (ícone câmera limpo) -->
+  <a href="https://www.instagram.com/2m_plastic" target="_blank">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+const links = document.querySelectorAll('.navbar a');
+const secoes = document.querySelectorAll('section');
+
+function mostrarSecao(id) {
+  secoes.forEach(s => s.classList.remove('ativo'));
+  document.getElementById(id).classList.add('ativo');
+}
+
+links.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    links.forEach(l => l.classList.remove('ativo'));
+    link.classList.add('ativo');
+    mostrarSecao(link.dataset.sec);
+  });
+});
+</script>
+
+</body>
+</html>
